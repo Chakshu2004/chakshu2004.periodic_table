@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Periodic Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Periodic Table</h1>
+  <div class="filters">
+    <label for="state">State:</label>
+    <select id="state">
+      <option value="all">All</option>
+      <option value="solid">Solid</option>
+      <option value="liquid">Liquid</option>
+      <option value="gas">Gas</option>
+    </select>
+    <label for="type">Type:</label>
+    <select id="type">
+      <option value="all">All</option>
+      <option value="metal">Metal</option>
+      <option value="nonmetal">Nonmetal</option>
+      <option value="metalloid">Metalloid</option>
+    </select>
+  </div>
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search by name or symbol...">
+  </div>
+  <div class="periodic-table" id="table"></div>
+  <div class="lanth-actin-container">
+    <div>Lanthanides</div>
+    <div class="lanth-actin-table" id="lanth-table"></div>
+    <div>Actinides</div>
+    <div class="lanth-actin-table" id="actin-table"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
